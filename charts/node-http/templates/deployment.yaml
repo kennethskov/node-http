@@ -21,7 +21,7 @@ spec:
         - name: ocirsecret    
       containers:
       - name: {{ .Chart.Name }}
-        image: "fra.icir.io/oraseemeadk/node-http:{{ .Values.image.tag }}"
+        image: "fra.ocir.io/oraseemeadk/node-http:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: {{ .Values.service.internalPort }}
